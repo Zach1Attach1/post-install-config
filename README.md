@@ -22,11 +22,11 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Portal Setup: Establish separate URLs for the admin/analyst login and end-user access to clearly differentiate roles.
+- Organizational Structure: Configure roles, departments, and teams to manage permissions and ticket visibility effectively.
+- User Registration: Adjust settings to require registration for ticket submission, ensuring that only authenticated users can create tickets.
+- Account Management: Create and assign accounts for both agents (with appropriate departmental affiliations) and end users.
+- Service Configuration: Set up SLAs to define response times and configure help topics to streamline ticket categorization.
 
 <h2>Configuration Steps</h2>
 
