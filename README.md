@@ -30,26 +30,12 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Configuration Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h2>1. Organizational Setup:</h2>
+In the Admin Panel, I established a clear structure by configuring roles, departments, and teams. I created a role such as “Supreme Admin” (via Agents → Roles) to manage high-level permissions, defined departments by assigning agents to “SysAdmins” for system-related issues and “Support” for customer queries, and set up teams like “Online Banking” (via Agents → Teams) to facilitate collaboration across different departments.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h2>2. Ticket Submission Settings:</h2>
+I controlled the ticket submission process by navigating to Admin Panel → Settings → User Settings and unchecking the option that allowed unregistered users to create tickets. This action ensured that users had to register and log in before submitting a support request, thereby tying every ticket to an authenticated user and streamlining follow-up communication.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+<h2>3. Account and Service Configuration:</h2>
+I configured both agent and end-user accounts and defined service parameters to optimize support operations. I added new agents (for example, Jane in the “SysAdmins” department and John in “Support”) via Admin Panel → Agents → Add New, and created user accounts for customers like Karen and Ken through Agent Panel → Users → Add New. Additionally, I set up service-level agreements (SLAs) under Admin Panel → Manage → SLA by establishing tiers such as Sev-A (1-hour grace period, 24/7 schedule), Sev-B (4-hour grace period, 24/7), and Sev-C (8-hour grace period during business hours), and configured help topics (e.g., Business Critical Outage, Password Reset) under Admin Panel → Manage → Help Topics to streamline ticket categorization and resolution.
 <br />
