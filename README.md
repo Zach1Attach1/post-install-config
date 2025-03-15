@@ -1,41 +1,105 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+# osTicket: Post-Installation Configuration
 
-<h1>osTicket - Post-Install Configuration</h1>
-This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
+## Project Overview
+This project demonstrates the post-installation configuration of osTicket, setting up the necessary roles, departments, teams, and other components to create a functioning help desk system.
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+## Environments and Technologies Used
+- Microsoft Azure (Virtual Machine)
+- Windows 10
+- osTicket (Help Desk Ticketing System)
 - Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+## Prerequisites
+- osTicket successfully installed
+- Admin access to osTicket
 
-- Windows 10</b> (21H2)
+## Configuration Steps
 
-<h2>Post-Install Configuration Objectives</h2>
+### 1. Admin/Agent Panel Overview
+- Accessed the Admin Panel using admin credentials
+- Identified the differences between Agent and Admin panels
+- Explored the interface layout and key features
 
-- Portal Setup: Establish separate URLs for the admin/analyst login and end-user access to clearly differentiate roles.
-- Organizational Structure: Configure roles, departments, and teams to manage permissions and ticket visibility effectively.
-- User Registration: Adjust settings to require registration for ticket submission, ensuring that only authenticated users can create tickets.
-- Account Management: Create and assign accounts for both agents (with appropriate departmental affiliations) and end users.
-- Service Configuration: Set up SLAs to define response times and configure help topics to streamline ticket categorization.
+![Admin Panel](https://i.imgur.com/T3V2cD0.png)
 
-<h2>Configuration Steps</h2>
+### 2. Configure Roles
+Roles group permissions that can be assigned to Agents.
 
-<h2>1. Organizational Setup:</h2>
-In the Admin Panel, I established a clear structure by configuring roles, departments, and teams. I created a role such as “Supreme Admin” (via Agents → Roles) to manage high-level permissions, defined departments by assigning agents to “SysAdmins” for system-related issues and “Support” for customer queries, and set up teams like “Online Banking” (via Agents → Teams) to facilitate collaboration across different departments.
+- Navigated to Admin Panel -> Agents -> Roles
+- Created a new role: "Supreme Admin"
+- Assigned all permissions to this role to allow full system access
 
-<h2>2. Ticket Submission Settings:</h2>
-I controlled the ticket submission process by navigating to Admin Panel → Settings → User Settings and unchecking the option that allowed unregistered users to create tickets. This action ensured that users had to register and log in before submitting a support request, thereby tying every ticket to an authenticated user and streamlining follow-up communication.
+![Roles Configuration](https://i.imgur.com/8wJpqjq.png)
 
-<h2>3. Account and Service Configuration:</h2>
-I configured both agent and end-user accounts and defined service parameters to optimize support operations. I added new agents (for example, Jane in the “SysAdmins” department and John in “Support”) via Admin Panel → Agents → Add New, and created user accounts for customers like Karen and Ken through Agent Panel → Users → Add New. Additionally, I set up service-level agreements (SLAs) under Admin Panel → Manage → SLA by establishing tiers such as Sev-A (1-hour grace period, 24/7 schedule), Sev-B (4-hour grace period, 24/7), and Sev-C (8-hour grace period during business hours), and configured help topics (e.g., Business Critical Outage, Password Reset) under Admin Panel → Manage → Help Topics to streamline ticket categorization and resolution.
-<br />
+### 3. Configure Departments
+Departments determine ticket visibility and assignment.
+
+- Navigated to Admin Panel -> Agents -> Departments
+- Created "SysAdmins" department
+- Configured as a top-level department to handle system-related issues
+- Deleted the "Maintenance" department (not archived)
+
+![Departments](https://i.imgur.com/zYDgrJ0.png)
+
+### 4. Configure Teams
+Teams allow pulling agents from different departments.
+
+- Navigated to Admin Panel -> Agents -> Teams
+- Created "Online Banking" team to handle financial system issues
+- Team members can come from different departments but collaborate on banking issues
+
+![Teams Configuration](https://i.imgur.com/YPARhNx.png)
+
+### 5. Configure Agents (Workers)
+Agents are the staff who work on tickets.
+
+- Navigated to Admin Panel -> Agents -> Add New
+- Created Agent "Jane" in SysAdmins department
+- Created Agent "John" in Support department
+- Assigned appropriate roles and team memberships
+
+![Agents Configuration](https://i.imgur.com/1lqzJY8.png)
+
+### 6. Configure User Registration Settings
+- Navigated to Admin Panel -> Settings -> User Settings
+- Required registration and login to create tickets for better tracking
+
+### 7. Configure Users (Customers)
+Users are the customers who submit tickets.
+
+- Navigated to Agent Panel -> Users -> Add New
+- Created users "Karen" and "Ken" as sample customers
+- Set up their email addresses and basic information
+
+![Users Configuration](https://i.imgur.com/KFdOmRo.png)
+
+### 8. Configure SLA (Service Level Agreements)
+SLAs define the timeframe for ticket resolution.
+
+- Navigated to Admin Panel -> Manage -> SLA
+- Created three tiers of service:
+  - Sev-A: 1 hour response time, 24/7 schedule (critical issues)
+  - Sev-B: 4 hour response time, 24/7 schedule (high priority)
+  - Sev-C: 8 hour response time, business hours (normal priority)
+
+![SLA Configuration](https://i.imgur.com/AZlXJEv.png)
+
+### 9. Configure Help Topics
+Help Topics categorize tickets for proper routing.
+
+- Navigated to Admin Panel -> Manage -> Help Topics
+- Created the following topics:
+  - Business Critical Outage
+  - Personal Computer Issues
+  - Equipment Request
+  - Password Reset
+  - Other
+
+![Help Topics](https://i.imgur.com/uc4MQdW.png)
+
+## Lessons Learned
+- Understanding role-based access control in help desk systems
+- The importance of proper SLA configuration for prioritizing work
+- How departments, teams and agents work together in a ticket workflow
+- Methods of categorizing and routing support requests efficiently
+- The difference between user (customer) and agent experiences
