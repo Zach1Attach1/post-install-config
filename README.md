@@ -46,13 +46,11 @@ Teams allow pulling agents from different departments.
 
 ### 5. Configure Agents (Workers)
 Agents are the staff who work on tickets.
-
 - Navigated to Admin Panel -> Agents -> Add New
 - Created Agent "Jane" in SysAdmins department
 - Created Agent "John" in Support department
 - Assigned appropriate roles and team memberships
-
-![Agents Configuration](https://i.imgur.com/1lqzJY8.png)
+![Agents Configuration](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20131453.png?raw=true)
 
 ### 6. Configure User Registration Settings
 - Navigated to Admin Panel -> Settings -> User Settings
@@ -60,27 +58,28 @@ Agents are the staff who work on tickets.
 
 ### 7. Configure Users (Customers)
 Users are the customers who submit tickets.
-
 - Navigated to Agent Panel -> Users -> Add New
 - Created users "Karen" and "Ken" as sample customers
 - Set up their email addresses and basic information
-
-![Users Configuration](https://i.imgur.com/KFdOmRo.png)
+![Users Configuration](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20151708.png?raw=true)
 
 ### 8. Configure SLA (Service Level Agreements)
 SLAs define the timeframe for ticket resolution.
-
 - Navigated to Admin Panel -> Manage -> SLA
 - Created three tiers of service:
   - Sev-A: 1 hour response time, 24/7 schedule (critical issues)
   - Sev-B: 4 hour response time, 24/7 schedule (high priority)
   - Sev-C: 8 hour response time, business hours (normal priority)
 
-![SLA Configuration](https://i.imgur.com/AZlXJEv.png)
+![SLA Navigation](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20152131.png?raw=true)
 
+![SLA-A Configuration](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20152209.png?raw=true)
+
+![SLA-B Configuration](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20152322.png?raw=true)
+
+![SLA-C Configuration](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20152401.png?raw=true)
 ### 9. Configure Help Topics
 Help Topics categorize tickets for proper routing.
-
 - Navigated to Admin Panel -> Manage -> Help Topics
 - Created the following topics:
   - Business Critical Outage
@@ -88,9 +87,7 @@ Help Topics categorize tickets for proper routing.
   - Equipment Request
   - Password Reset
   - Other
-
-![Help Topics](https://i.imgur.com/uc4MQdW.png)
-
+![Help Topics](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20152933.png?raw=true)
 ## Lessons Learned
 - Understanding role-based access control in help desk systems
 - The importance of proper SLA configuration for prioritizing work
