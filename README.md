@@ -20,35 +20,29 @@ This project demonstrates the post-installation configuration of osTicket, setti
 - Identified the differences between Agent and Admin panels
 - Explored the interface layout and key features
 
-![Admin Panel](https://i.imgur.com/T3V2cD0.png)
-
 ### 2. Configure Roles
 Roles group permissions that can be assigned to Agents.
-
 - Navigated to Admin Panel -> Agents -> Roles
 - Created a new role: "Supreme Admin"
 - Assigned all permissions to this role to allow full system access
 
-![Roles Configuration](https://i.imgur.com/8wJpqjq.png)
+![Roles Navigation](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20125425.png?raw=true)
 
+![Roles Permission Assignment](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20125536.png?raw=true)
 ### 3. Configure Departments
 Departments determine ticket visibility and assignment.
-
 - Navigated to Admin Panel -> Agents -> Departments
 - Created "SysAdmins" department
 - Configured as a top-level department to handle system-related issues
 - Deleted the "Maintenance" department (not archived)
-
-![Departments](https://i.imgur.com/zYDgrJ0.png)
+![Departments](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20130145.png?raw=true)
 
 ### 4. Configure Teams
 Teams allow pulling agents from different departments.
-
 - Navigated to Admin Panel -> Agents -> Teams
 - Created "Online Banking" team to handle financial system issues
 - Team members can come from different departments but collaborate on banking issues
-
-![Teams Configuration](https://i.imgur.com/YPARhNx.png)
+![Teams Configuration](https://github.com/Zach1Attach1/Images-folder/blob/main/Screenshot%202025-04-14%20130508.png?raw=true)
 
 ### 5. Configure Agents (Workers)
 Agents are the staff who work on tickets.
